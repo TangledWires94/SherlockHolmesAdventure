@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: Pick Up Bedroom Key
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - Sherlock pockets the key.
+  responseLabel: Take key
+  hasResponse: 0
+  responseObjects: []
+  gameDataCheck: 0
+  checkGameDataKey: 0
+  checkGameDataValue: 0
+  alternateTextPromptSO: {fileID: 0}
+  gameDataUpdate: 1
+  updateGameDataKey: 0
+  updateGameDataValue: 1
+  changeObject: 0
+  oldObjectName: 
+  newObject: {fileID: 0}
+  openPopup: 0
+  popupObjectName: 
+  sceneTransition: 0
+  sceneIndex: 0
+  deleteObject: 1
+  objectToDelete: Key

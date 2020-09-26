@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: Bedroom Key
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 'A small brass key. Using Sherlock''s masterful deduction he
+
+    determines
+    this must be for his bedroom door.'
+  responseLabel: 
+  hasResponse: 1
+  responseObjects:
+  - {fileID: 11400000, guid: 860ce07600dc9a746865b6461234af73, type: 2}
+  - {fileID: 11400000, guid: 2a459c7a50f3eb84280f73023867927b, type: 2}
+  flagCheck: 0
+  checkPlayerPref: 
+  checkPlayerPrefValue: 0
+  alternateTextPromptSO: {fileID: 0}
+  flagUpdate: 0
+  updatePlayerPref: 
+  updatePlayerPrefValue: 0
+  changeObject: 0
+  oldObjectName: 
+  newObject: {fileID: 0}
+  sceneTransition: 0
+  sceneIndex: 0
+  deleteObject: 0
+  objectToDelete: 

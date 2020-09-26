@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: Bedroom Door
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - The door to Sherlock's bedroom.
+  - 'In an effort to keep Watson from bothering him, Sherlock
+
+    locked himself
+    into the room last night.'
+  responseLabel: 
+  hasResponse: 1
+  responseObjects:
+  - {fileID: 11400000, guid: 850b5abd213ece7459ec2053c6ba4e0b, type: 2}
+  - {fileID: 11400000, guid: 0a97440a4e000f04aa52cb752c947432, type: 2}
+  gameDataCheck: 1
+  checkGameDataKey: 1
+  checkGameDataValue: 1
+  alternateTextPromptSO: {fileID: 11400000, guid: a41fe99073ce49d4e9f053de401f133f,
+    type: 2}
+  gameDataUpdate: 0
+  updateGameDataKey: 0
+  updateGameDataValue: 0
+  changeObject: 0
+  oldObjectName: 
+  newObject: {fileID: 0}
+  openPopup: 0
+  popupObjectName: 
+  sceneTransition: 0
+  sceneIndex: 0
+  deleteObject: 0
+  objectToDelete: 

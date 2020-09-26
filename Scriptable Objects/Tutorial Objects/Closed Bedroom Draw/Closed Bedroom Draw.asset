@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: Closed Bedroom Draw
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 'Sherlock''s bedroom dresser. The draw can be pulled open
+
+    to reveal it''s
+    many secret contents.'
+  responseLabel: 
+  hasResponse: 1
+  responseObjects:
+  - {fileID: 11400000, guid: 4b93637f5cec5f14c88802722765e424, type: 2}
+  - {fileID: 11400000, guid: 371db7220afa89a4abec6990dfcc54e4, type: 2}
+  gameDataCheck: 0
+  checkGameDataKey: 0
+  checkGameDataValue: 0
+  alternateTextPromptSO: {fileID: 0}
+  gameDataUpdate: 0
+  updateGameDataKey: 0
+  updateGameDataValue: 0
+  changeObject: 0
+  oldObjectName: 
+  newObject: {fileID: 0}
+  openPopup: 0
+  popupObjectName: 
+  sceneTransition: 0
+  sceneIndex: 0
+  deleteObject: 0
+  objectToDelete: 

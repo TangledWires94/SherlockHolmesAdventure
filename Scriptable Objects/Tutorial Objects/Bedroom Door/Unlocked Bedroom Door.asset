@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: Unlocked Bedroom Door
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - Sherlock's bedroom door, unlocked and ready for him to*step out into the day.
+  responseLabel: 
+  hasResponse: 1
+  responseObjects:
+  - {fileID: 11400000, guid: df4ad20a559a999448032c63484435ef, type: 2}
+  - {fileID: 11400000, guid: 3b08f11de83a368418cfab3d8289c306, type: 2}
+  flagCheck: 0
+  checkPlayerPref: 
+  checkPlayerPrefValue: 0
+  alternateTextPromptSO: {fileID: 0}
+  flagUpdate: 0
+  updatePlayerPref: 
+  updatePlayerPrefValue: 0
+  sceneTransition: 0
+  sceneIndex: 0
+  deleteObject: 0
+  objectToDelete: 

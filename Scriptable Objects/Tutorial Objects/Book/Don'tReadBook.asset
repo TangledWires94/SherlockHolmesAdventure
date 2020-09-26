@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: Don'tReadBook
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - Reading is for dorks.
+  responseLabel: Don't read
+  hasResponse: 0
+  responseObjects: []
+  flagCheck: 1
+  checkPlayerPref: ReadBook
+  checkPlayerPrefValue: 1
+  alternateTextPromptSO: {fileID: 11400000, guid: 7ab7731b5fdc9aa40a066961ef0d2132,
+    type: 2}
+  flagUpdate: 0
+  updatePlayerPref: 
+  updatePlayerPrefValue: 0

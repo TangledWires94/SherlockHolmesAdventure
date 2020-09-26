@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: Turn Over Photo
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 'On the revese side it appears Sherlock wrote himself a
+
+    message to remind
+    himself the goodness levels of this boy.'
+  - Wait what's happening up there?
+  - "What do you mean Sherlock Holmes liking dogs is protected \nby copyright?!"
+  - 'I didn''t go to the trouble of making this terrible MS Paint art
+
+    just to
+    be sued by the Conan Doyle estate.'
+  - 'I guess try to avoid indulging in any more copyrighted
+
+    character traits
+    please.'
+  - You can click and drag that out of the way to see what else*is in the draw.
+  responseLabel: Turn over photo
+  hasResponse: 0
+  responseObjects: []
+  gameDataCheck: 0
+  checkGameDataKey: 0
+  checkGameDataValue: 0
+  alternateTextPromptSO: {fileID: 0}
+  gameDataUpdate: 0
+  updateGameDataKey: 0
+  updateGameDataValue: 0
+  changeObject: 1
+  oldObjectName: Dog Photo Front
+  newObject: {fileID: 1805466856848421448, guid: 0d566e8eac1198e4286bbb805f796232,
+    type: 3}
+  openPopup: 0
+  popupObjectName: 
+  sceneTransition: 0
+  sceneIndex: 0
+  deleteObject: 0
+  objectToDelete: 

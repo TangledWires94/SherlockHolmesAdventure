@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
+  m_Name: StillBook
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - Still a book of fables and short stories.
+  responseLabel: Yes
+  hasResponse: 1
+  responseObjects:
+  - {fileID: 11400000, guid: cfd5127ebf6eacd449febeb3fd76dee1, type: 2}
+  - {fileID: 11400000, guid: 5e331d8887cf1904e99eace14cd7cdfe, type: 2}
+  flagCheck: 0
+  checkPlayerPref: 
+  checkPlayerPrefValue: 0
+  alternateTextPromptSO: {fileID: 0}
+  flagUpdate: 0
+  updatePlayerPref: 
+  updatePlayerPrefValue: 0
