@@ -32,6 +32,9 @@ public class TextPromptSO : ScriptableObject
     public bool openPopup; //Flag that tells UI manager to show a popup window
     public string popupObjectName;
 
+    [Header("Increase Lawyer Level")]
+    public bool increaseLawyerLevel;
+
     [Header("Scene Transition")]
     public bool sceneTransition; //Flag that tells manager to transition to next scene when this is clicked
     public int sceneIndex;

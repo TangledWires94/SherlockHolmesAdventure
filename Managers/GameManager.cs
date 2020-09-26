@@ -100,9 +100,14 @@ public class GameManager : Manager<GameManager>
         {
             GameObject popupObjectHolder = GameObject.Find(textPromptSO.popupObjectName + " Holder");
             GameObject popupObject = popupObjectHolder.transform.GetChild(0).gameObject;
-            Debug.Log(popupObject.activeSelf);
             popupObject.SetActive(false);
             popupObject.SetActive(true);
+        }
+
+        //Check if this text prompt increases lawyer level
+        if (textPromptSO.increaseLawyerLevel)
+        {
+            IncrementLawyerLevel();
         }
 
         //Check if this text prompt triggers scene change
@@ -158,6 +163,11 @@ public class GameManager : Manager<GameManager>
             //Add code here for Game Over
             Debug.Log("The lawyers are on their way, cheese it!");
         }
+    }
+
+    public void IncrementLawyerLevel()
+    {
+        UpdateLawyerLevel(lawyerLevel + 1);
     }
 
     #endregion

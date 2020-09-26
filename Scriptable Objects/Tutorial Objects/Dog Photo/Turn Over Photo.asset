@@ -27,7 +27,9 @@ MonoBehaviour:
 
     character traits
     please.'
-  - You can click and drag that out of the way to see what else*is in the draw.
+  - 'You can click and drag that out of the way to see what else
+
+    is in the draw.'
   responseLabel: Turn over photo
   hasResponse: 0
   responseObjects: []
@@ -42,8 +44,9 @@ MonoBehaviour:
   oldObjectName: Dog Photo Front
   newObject: {fileID: 1805466856848421448, guid: 0d566e8eac1198e4286bbb805f796232,
     type: 3}
-  openPopup: 0
-  popupObjectName: 
+  openPopup: 1
+  popupObjectName: Lawyer Button
+  increaseLawyerLevel: 1
   sceneTransition: 0
   sceneIndex: 0
   deleteObject: 0
