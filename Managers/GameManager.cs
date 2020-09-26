@@ -10,12 +10,22 @@ public class GameManager : Manager<GameManager>
     [SerializeField]
     public Dictionary<GameDataKeys, bool> gameData = new Dictionary<GameDataKeys, bool>();
 
+    int lawyerLevel;
+    public int lawyerLevelpub
+    {
+        get { return lawyerLevel; }
+    }
+    public int maxLawyerLevel;
+    LawyerHand lawyerHand;
+
     void Start()
     {
         for(int i = 0; i < Enum.GetNames(typeof(GameDataKeys)).Length; i++)
         {
             gameData.Add((GameDataKeys)i, false);
         }
+        lawyerHand = FindObjectOfType<LawyerHand>();
+        ResetLawyerHand();
     }
 
     #region Game Data Functions
@@ -108,6 +118,45 @@ public class GameManager : Manager<GameManager>
         {
             GameObject objectToDelete = GameObject.Find(textPromptSO.objectToDelete);
             Destroy(objectToDelete);
+        }
+    }
+
+    #endregion
+
+    #region Lawyer Hand Management
+
+    //Reset lawyerlevel and hand back to intial state, only intended to be used at start
+    void ResetLawyerHand()
+    {
+        lawyerLevel = 0;
+        lawyerHand.SetHandPosition(lawyerLevel);
+    }
+
+    //Update the position of the lawyer hand meter
+    public void UpdateLawyerLevel(int newLawyerLevel)
+    {
+        //Handle cases where newLawyerLevel is not within 0 - maxlawyerLevel range
+        if(newLawyerLevel > maxLawyerLevel)
+        {
+            lawyerLevel = maxLawyerLevel;
+        }
+        else if (newLawyerLevel <= 0)
+        {
+            lawyerLevel = 0;
+        } 
+        else
+        {
+            lawyerLevel = newLawyerLevel;
+        }
+
+        //Update hand in game
+        lawyerHand.SetHandPosition(lawyerLevel);
+
+        //If the lawyerlevel is at max it's Game Over
+        if(lawyerLevel >= maxLawyerLevel)
+        {
+            //Add code here for Game Over
+            Debug.Log("The lawyers are on their way, cheese it!");
         }
     }
 

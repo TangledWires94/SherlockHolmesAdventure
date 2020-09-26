@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class InputManager : Manager<InputManager>
 {
     public UnityEvent ContinueClick;
+    public int lawyerLevel;
 
     void Update()
     {
@@ -13,6 +14,12 @@ public class InputManager : Manager<InputManager>
         {
             ContinueClick.Invoke();
             //Manager<UIManager>.Instance.textContinue = true;
+        }
+
+        //Debug code to test lawyer hand movement
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Manager<GameManager>.Instance.UpdateLawyerLevel(lawyerLevel);
         }
     }
 }
