@@ -18,6 +18,8 @@ public class GameManager : Manager<GameManager>
     public int maxLawyerLevel;
     LawyerHand lawyerHand;
 
+    Animator toBeContinuedAnim;
+
     void Start()
     {
         for(int i = 0; i < Enum.GetNames(typeof(GameDataKeys)).Length; i++)
@@ -26,6 +28,7 @@ public class GameManager : Manager<GameManager>
         }
         lawyerHand = FindObjectOfType<LawyerHand>();
         ResetLawyerHand();
+        toBeContinuedAnim = GameObject.Find("To Be Continued").GetComponent<Animator>();
     }
 
     #region Game Data Functions
@@ -113,6 +116,8 @@ public class GameManager : Manager<GameManager>
         if (textPromptSO.sceneTransition)
         {
             Debug.LogFormat("Transition to scene {0}", textPromptSO.sceneIndex);
+            //No extra scenes because just the tutorial scene made so trigger animation for "To Be Continued"
+            toBeContinuedAnim.SetTrigger("EndTutorial");
         }
 
         //Any other checks should be done before the delete check is done in case the object to be deleted is the one holding the text prompt
