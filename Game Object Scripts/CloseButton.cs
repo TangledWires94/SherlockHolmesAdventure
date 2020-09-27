@@ -19,6 +19,7 @@ public class CloseButton : MonoBehaviour
     {
         if (mouseOver && Input.GetMouseButtonDown(0) && !Manager<UIManager>.Instance.showingText && !Manager<UIManager>.Instance.awaitingResponse)
         {
+            mouseOver = false;
             objectToClose.SetActive(false);
         }
     }

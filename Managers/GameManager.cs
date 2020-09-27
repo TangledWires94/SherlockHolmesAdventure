@@ -100,7 +100,6 @@ public class GameManager : Manager<GameManager>
         {
             GameObject popupObjectHolder = GameObject.Find(textPromptSO.popupObjectName + " Holder");
             GameObject popupObject = popupObjectHolder.transform.GetChild(0).gameObject;
-            popupObject.SetActive(false);
             popupObject.SetActive(true);
         }
 

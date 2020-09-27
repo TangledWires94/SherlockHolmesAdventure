@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class LawyerHand : MonoBehaviour
 {
-    Transform holderTransform;
     public float[] handPositions = new float[1];
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        holderTransform = transform;
-    }
 
     public void SetHandPosition(int lawyerLevel)
     {
@@ -24,7 +17,7 @@ public class LawyerHand : MonoBehaviour
         {
             handX = handPositions[lawyerLevel];
         }
-        holderTransform.position = new Vector2(handPositions[lawyerLevel], holderTransform.position.y);
+        transform.position = new Vector2(handPositions[lawyerLevel], transform.position.y);
     }
 
 
