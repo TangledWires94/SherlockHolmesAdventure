@@ -106,10 +106,29 @@ public class GameManager : Manager<GameManager>
             popupObject.SetActive(true);
         }
 
+        //Check if this text prompt spwans an object
+        if (textPromptSO.spawnObject)
+        {
+            Instantiate(textPromptSO.spawnedObject, textPromptSO.spawnTransform);
+        }
+
         //Check if this text prompt increases lawyer level
         if (textPromptSO.increaseLawyerLevel)
         {
             IncrementLawyerLevel();
+        }
+
+        //Check if this text prompt triggers an animation
+        if (textPromptSO.triggerAnimation)
+        {
+            Animator animatorObject = GameObject.Find(textPromptSO.triggerAnimatorName).GetComponent<Animator>();
+            if(animatorObject != null)
+            {
+                animatorObject.SetTrigger(textPromptSO.triggerString);
+            } else
+            {
+                Debug.LogFormat("{0} is not a valid animator name!", textPromptSO.triggerAnimatorName);
+            }
         }
 
         //Check if this text prompt triggers scene change

@@ -10,13 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
-  m_Name: CancelBookRead
+  m_Name: Painting
   m_EditorClassIdentifier: 
   dialogueText:
-  - The book returns to table, sad and dejected.
-  responseLabel: No
-  hasResponse: 0
-  responseObjects: []
+  - 'A landscape painting of a peaceful, British countryside
+
+    scene of sheep
+    grazing on a hill received by Sherlock as a
+
+    gift'
+  - 'I was going to tell you how many sheep there were but I
+
+    dozed off part
+    way.'
+  - ...
+  - Be honest, was that too obvious a joke?
+  responseLabel: 
+  hasResponse: 1
+  responseObjects:
+  - {fileID: 11400000, guid: aebb9a170798738489c166672f8f2889, type: 2}
+  - {fileID: 11400000, guid: 66a553265b93188458e66206c96d4555, type: 2}
+  - {fileID: 11400000, guid: a842007954f8a044081ccbdf2c4efc17, type: 2}
   gameDataCheck: 0
   checkGameDataKey: 0
   checkGameDataValue: 0
@@ -29,6 +43,9 @@ MonoBehaviour:
   newObject: {fileID: 0}
   openPopup: 0
   popupObjectName: 
+  spawnObject: 0
+  spawnedObject: {fileID: 0}
+  spawnTransform: {fileID: 0}
   increaseLawyerLevel: 0
   sceneTransition: 0
   sceneIndex: 0

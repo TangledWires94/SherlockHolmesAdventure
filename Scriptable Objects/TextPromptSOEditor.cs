@@ -7,7 +7,7 @@ using UnityEditor;
 [CanEditMultipleObjects]
 public class TextPromptSOEditor : Editor
 {
-    SerializedProperty responseFlagProp, gameDataCheckProp, gameDataUpdateProp, objectChangeProp,  popupProp, sceneTransitionProp, deleteObjectProp;
+    SerializedProperty responseFlagProp, gameDataCheckProp, gameDataUpdateProp, objectChangeProp,  popupProp, spawnProp, animProp, sceneTransitionProp, deleteObjectProp;
 
     void OnEnable()
     {
@@ -17,6 +17,8 @@ public class TextPromptSOEditor : Editor
         gameDataUpdateProp = serializedObject.FindProperty("gameDataUpdate");
         objectChangeProp = serializedObject.FindProperty("changeObject");
         popupProp = serializedObject.FindProperty("openPopup");
+        spawnProp = serializedObject.FindProperty("spawnObject");
+        animProp = serializedObject.FindProperty("triggerAnimation");
         sceneTransitionProp = serializedObject.FindProperty("sceneTransition");
         deleteObjectProp = serializedObject.FindProperty("deleteObject");
     }
@@ -53,6 +55,18 @@ public class TextPromptSOEditor : Editor
         if (!popupProp.boolValue)
         {
             propertiesToExcludeList.Add("popupObjectName");
+        }
+
+        if (!spawnProp.boolValue)
+        {
+            propertiesToExcludeList.Add("spawnedObject");
+            propertiesToExcludeList.Add("spawnTransform");
+        }
+
+        if (!animProp.boolValue)
+        {
+            propertiesToExcludeList.Add("triggerAnimatorName");
+            propertiesToExcludeList.Add("triggerString");
         }
 
         if (!sceneTransitionProp.boolValue)

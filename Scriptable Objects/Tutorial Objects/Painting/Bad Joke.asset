@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
-  m_Name: CancelBookRead
+  m_Name: Bad Joke
   m_EditorClassIdentifier: 
-  dialogueText:
-  - The book returns to table, sad and dejected.
-  responseLabel: No
+  dialogueText: []
+  responseLabel: Yes
   hasResponse: 0
   responseObjects: []
   gameDataCheck: 0
@@ -29,7 +28,14 @@ MonoBehaviour:
   newObject: {fileID: 0}
   openPopup: 0
   popupObjectName: 
+  spawnObject: 0
+  spawnedObject: {fileID: 4214955146067316470, guid: ad245c0b0d232e641acd7b07ccc7595a,
+    type: 3}
+  spawnTransform: {fileID: 0}
   increaseLawyerLevel: 0
+  triggerAnimation: 1
+  triggerAnimatorName: Will Remember That
+  triggerString: George Will Remember That
   sceneTransition: 0
   sceneIndex: 0
   deleteObject: 0

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
-  m_Name: CancelBookRead
+  m_Name: Good Joke
   m_EditorClassIdentifier: 
   dialogueText:
-  - The book returns to table, sad and dejected.
+  - Correct answer.
   responseLabel: No
   hasResponse: 0
   responseObjects: []
@@ -29,6 +29,9 @@ MonoBehaviour:
   newObject: {fileID: 0}
   openPopup: 0
   popupObjectName: 
+  spawnObject: 0
+  spawnedObject: {fileID: 0}
+  spawnTransform: {fileID: 0}
   increaseLawyerLevel: 0
   sceneTransition: 0
   sceneIndex: 0
