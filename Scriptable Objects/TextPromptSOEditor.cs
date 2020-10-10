@@ -7,7 +7,7 @@ using UnityEditor;
 [CanEditMultipleObjects]
 public class TextPromptSOEditor : Editor
 {
-    SerializedProperty responseFlagProp, gameDataCheckProp, gameDataUpdateProp, objectChangeProp,  popupProp, spawnProp, animProp, sceneTransitionProp, deleteObjectProp;
+    SerializedProperty responseFlagProp, gameDataCheckProp, gameDataUpdateProp, addToInventoryProp, objectChangeProp, removeFromInventoryProp, popupProp, spawnProp, animProp, sceneTransitionProp, deleteObjectProp;
 
     void OnEnable()
     {
@@ -15,6 +15,8 @@ public class TextPromptSOEditor : Editor
         responseFlagProp = serializedObject.FindProperty("hasResponse");
         gameDataCheckProp = serializedObject.FindProperty("gameDataCheck");
         gameDataUpdateProp = serializedObject.FindProperty("gameDataUpdate");
+        addToInventoryProp = serializedObject.FindProperty("addToInventory");
+        removeFromInventoryProp = serializedObject.FindProperty("removeFromInventory");
         objectChangeProp = serializedObject.FindProperty("changeObject");
         popupProp = serializedObject.FindProperty("openPopup");
         spawnProp = serializedObject.FindProperty("spawnObject");
@@ -44,6 +46,20 @@ public class TextPromptSOEditor : Editor
             propertiesToExcludeList.Add("updateGameDataKey");
             propertiesToExcludeList.Add("updateGameDataValue");
             
+        }
+
+        if (!addToInventoryProp.boolValue)
+        {
+            propertiesToExcludeList.Add("inventorySprite");
+            propertiesToExcludeList.Add("inventorySpriteHighlighted");
+            propertiesToExcludeList.Add("inventoryObjectAddName");
+            propertiesToExcludeList.Add("inventoryTextPrompt");
+        }
+
+
+        if (!removeFromInventoryProp.boolValue)
+        {
+            propertiesToExcludeList.Add("inventoryObjectRemoveName");
         }
 
         if (!objectChangeProp.boolValue)
