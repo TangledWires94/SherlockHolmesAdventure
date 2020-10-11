@@ -25,11 +25,27 @@ MonoBehaviour:
   gameDataUpdate: 1
   updateGameDataKey: 3
   updateGameDataValue: 1
+  addToInventory: 1
+  inventorySprite: {fileID: 21300000, guid: 47643f562f02889439f267995f184bfe, type: 3}
+  inventorySpriteHighlighted: {fileID: 21300000, guid: 8ad9efd3ee2d9534db809c3e963bf9f3,
+    type: 3}
+  inventoryObjectAddName: Hat
+  inventoryTextPrompt: {fileID: 11400000, guid: daae3988f92954b4b9b6dda0eef9f879,
+    type: 2}
+  removeFromInventory: 0
+  inventoryObjectRemoveName: 
   changeObject: 0
   oldObjectName: 
   newObject: {fileID: 0}
   openPopup: 0
   popupObjectName: 
+  spawnObject: 0
+  spawnedObject: {fileID: 0}
+  spawnTransform: {fileID: 0}
+  increaseLawyerLevel: 0
+  triggerAnimation: 0
+  triggerAnimatorName: 
+  triggerString: 
   sceneTransition: 0
   sceneIndex: 0
   deleteObject: 1

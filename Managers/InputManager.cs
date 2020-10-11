@@ -19,10 +19,10 @@ public class InputManager : Manager<InputManager>
             //Manager<UIManager>.Instance.textContinue = true;
         }
 
-        //Debug code to test lawyer hand movement
-        if (Input.GetKeyDown(KeyCode.L))
+        //Debug code to removing inventory objects
+        if (Input.GetKeyDown(KeyCode.Delete))
         {
-            Manager<GameManager>.Instance.UpdateLawyerLevel(lawyerLevel);
+            Manager<InventoryManager>.Instance.RemoveInventoryObjectByIndex(0);
         }
 
         //Allow player to hold button to show all objects that can be interacted with

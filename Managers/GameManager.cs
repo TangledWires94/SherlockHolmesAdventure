@@ -89,6 +89,18 @@ public class GameManager : Manager<GameManager>
             SetGameDataValue(textPromptSO.updateGameDataKey, textPromptSO.updateGameDataValue);
         }
 
+        //Check if this text prompt adds item to inventory
+        if (textPromptSO.addToInventory)
+        {
+            Manager<InventoryManager>.Instance.AddNewInventoryObject(textPromptSO.inventorySprite, textPromptSO.inventorySpriteHighlighted, textPromptSO.inventoryObjectAddName, textPromptSO.inventoryTextPrompt);
+        }
+
+        //Check if this text prompt removes item from inventory
+        if (textPromptSO.removeFromInventory)
+        {
+            Manager<InventoryManager>.Instance.RemoveInventoryObjectByName(textPromptSO.inventoryObjectRemoveName);
+        }
+
         //Check if text prompt triggers object to be swapped out
         if (textPromptSO.changeObject)
         {

@@ -23,6 +23,17 @@ public class TextPromptSO : ScriptableObject
     public GameManager.GameDataKeys updateGameDataKey;
     public bool updateGameDataValue;
 
+    [Header("Add To Inventory")]
+    public bool addToInventory; //Flag that tells Game manager to add new object to inventory list
+    public Sprite inventorySprite;
+    public Sprite inventorySpriteHighlighted;
+    public string inventoryObjectAddName;
+    public TextPromptSO inventoryTextPrompt;
+
+    [Header("Remove From Inventory")]
+    public bool removeFromInventory; //Flag that tells game manager to check for object in inventory and remove it if it exists
+    public string inventoryObjectRemoveName;
+
     [Header("Change Object")] 
     public bool changeObject; //Flag that tells Game Manager to swap the object selected out for another object
     public string oldObjectName;
