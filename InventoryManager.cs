@@ -12,7 +12,6 @@ public class InventoryManager : Manager<InventoryManager>
         InventoryObject[] inventoryObjectsArray = FindObjectsOfType<InventoryObject>();
         for(int i = 1; i < inventoryObjectsArray.Length + 1; i++)
         {
-            Debug.Log("Inventory Object " + i.ToString());
             inventoryObjects.Add(GameObject.Find("Inventory Object " + i.ToString()).GetComponent<InventoryObject>());
         }
     }
