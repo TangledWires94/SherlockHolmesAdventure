@@ -15,8 +15,11 @@ public class HighlightSprite : MonoBehaviour
         sr.sprite = normalSprite;
         Manager<InputManager>.Instance.StartHighlightOverride.AddListener(StartHighlightOverride);
         Manager<InputManager>.Instance.StopHighlightOverride.AddListener(StopHighlightOverride);
+        mouseOver = false;
+        highlightOverride = false;
     }
 
+    /*
     void OnMouseEnter()
     {
         if (!Manager<UIManager>.Instance.showingText && !Manager<UIManager>.Instance.awaitingResponse)
@@ -27,6 +30,25 @@ public class HighlightSprite : MonoBehaviour
     }
 
     void OnMouseExit()
+    {
+        mouseOver = false;
+        if (!highlightOverride)
+        {
+            sr.sprite = normalSprite;
+        }
+    }
+    */
+
+    public void MouseOver()
+    {
+        if (!Manager<UIManager>.Instance.showingText && !Manager<UIManager>.Instance.awaitingResponse)
+        {
+            mouseOver = true;
+            sr.sprite = highlightedSprite;
+        }
+    }
+
+    public void MouseLeave()
     {
         mouseOver = false;
         if (!highlightOverride)

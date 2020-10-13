@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e954ed6741f13c34e93ed49210863ad3, type: 3}
   m_Name: Bad Joke
   m_EditorClassIdentifier: 
-  dialogueText: []
+  dialogueText:
+  - Well then...
   responseLabel: Yes
   hasResponse: 0
   responseObjects: []
@@ -23,6 +24,13 @@ MonoBehaviour:
   gameDataUpdate: 0
   updateGameDataKey: 0
   updateGameDataValue: 0
+  addToInventory: 0
+  inventorySprite: {fileID: 0}
+  inventorySpriteHighlighted: {fileID: 0}
+  inventoryObjectAddName: 
+  inventoryTextPrompt: {fileID: 0}
+  removeFromInventory: 0
+  inventoryObjectRemoveName: 
   changeObject: 0
   oldObjectName: 
   newObject: {fileID: 0}
