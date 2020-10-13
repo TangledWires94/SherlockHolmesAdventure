@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if (UNITY_EDITOR) 
+
 [CustomEditor(typeof(TextPromptSO))]
 [CanEditMultipleObjects]
 public class TextPromptSOEditor : Editor
@@ -106,3 +108,5 @@ public class TextPromptSOEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 }
+
+#endif
