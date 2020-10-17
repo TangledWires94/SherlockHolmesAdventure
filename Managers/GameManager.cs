@@ -143,6 +143,12 @@ public class GameManager : Manager<GameManager>
             }
         }
 
+        //Check if this text prompt triggers a sound effect
+        if (textPromptSO.playSound)
+        {
+            Manager<SoundManager>.Instance.PlaySoundEffect(textPromptSO.soundEffect);
+        }
+
         //Check if this text prompt triggers scene change
         if (textPromptSO.sceneTransition)
         {

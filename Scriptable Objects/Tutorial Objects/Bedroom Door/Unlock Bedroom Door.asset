@@ -30,11 +30,27 @@ MonoBehaviour:
   gameDataUpdate: 1
   updateGameDataKey: 1
   updateGameDataValue: 1
+  addToInventory: 0
+  inventorySprite: {fileID: 0}
+  inventorySpriteHighlighted: {fileID: 0}
+  inventoryObjectAddName: 
+  inventoryTextPrompt: {fileID: 0}
+  removeFromInventory: 0
+  inventoryObjectRemoveName: 
   changeObject: 0
   oldObjectName: 
   newObject: {fileID: 0}
   openPopup: 0
   popupObjectName: 
+  spawnObject: 0
+  spawnedObject: {fileID: 0}
+  spawnTransform: {fileID: 0}
+  increaseLawyerLevel: 0
+  triggerAnimation: 0
+  triggerAnimatorName: 
+  triggerString: 
+  playSound: 1
+  soundEffect: 1
   sceneTransition: 0
   sceneIndex: 0
   deleteObject: 0

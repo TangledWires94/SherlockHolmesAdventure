@@ -56,6 +56,10 @@ public class TextPromptSO : ScriptableObject
     public string triggerAnimatorName;
     public string triggerString;
 
+    [Header("Play Sound Effect")]
+    public bool playSound; //Flag that tells Game Manager to play a sound when this text prompt is selected
+    public SoundManager.SoundEffectNames soundEffect;
+
     [Header("Scene Transition")]
     public bool sceneTransition; //Flag that tells manager to transition to next scene when this is clicked
     public int sceneIndex;

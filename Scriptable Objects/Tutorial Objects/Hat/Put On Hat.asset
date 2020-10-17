@@ -46,6 +46,8 @@ MonoBehaviour:
   triggerAnimation: 0
   triggerAnimatorName: 
   triggerString: 
+  playSound: 1
+  soundEffect: 0
   sceneTransition: 0
   sceneIndex: 0
   deleteObject: 1

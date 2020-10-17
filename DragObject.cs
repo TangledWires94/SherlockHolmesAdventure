@@ -5,7 +5,6 @@ using UnityEngine;
 public class DragObject : MonoBehaviour
 {
     Transform objectTransform;
-    bool mouseOver;
     Camera mainCamera;
 
     public enum DragState { Released, Held};
@@ -18,7 +17,6 @@ public class DragObject : MonoBehaviour
     void Start()
     {
         objectTransform = gameObject.transform;
-        mouseOver = false;
         mainCamera = Camera.main;
         dragState = DragState.Released;
     }
@@ -58,15 +56,4 @@ public class DragObject : MonoBehaviour
         offset = new Vector3(diff.x, diff.y, 0f);
         dragState = DragState.Held;
     }
-
-    void OnMouseEnter()
-    {
-        mouseOver = true;
-    }
-
-    void OnMouseExit()
-    {
-        mouseOver = false;
-    }
-
 }
